@@ -40,10 +40,9 @@ Please refer the <a href="https://github.com/expo/react-native-appearance">docs<
 ![rn-dark-mode](demo.gif)
 
 <h3>Example</h3>
+
 ```sh
-
 // App.js
-
 import React from 'react';
 import ThemeProvider from './theme';
 import Home from './Home';
@@ -59,7 +58,6 @@ const App = () => {
 export default App;
 
 // Home.js
-
 import React from 'react';
 import {useTheme} from './theme';
 import {View, Text, Switch} from 'react-native';
