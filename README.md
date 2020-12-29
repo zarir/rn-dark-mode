@@ -24,7 +24,7 @@ Allows application to detect dark mode on users device using react-native-appear
 
 <h3>Installation</h3>
 
-For rn-dark-mode library to work you need to install react-native-appearance dependency in your project
+This library requires react-native-appearance dependency in your project
 
 Using npm:
 ```sh
