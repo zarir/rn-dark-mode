@@ -37,7 +37,7 @@ yarn add react-native-appearance
 Please refer the <a href="https://github.com/expo/react-native-appearance">docs</a> for linking
 
 <h3>Preview</h3>
-[![Demo screenshot][demo-screenshot]]((https://demo.com))
+<img src="https://github.com/zarir/rn-dark-mode/blob/master/demo.gif" alt="Showcase iOS" width="200" height="433">
 
 <h3>Example</h3>
 
@@ -93,8 +93,4 @@ const Home = () => {
 ```
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[demo-screenshot]: demo.gif
 
