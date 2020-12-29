@@ -37,6 +37,6 @@ yarn add react-native-appearance
 Please refer the <a href="https://github.com/expo/react-native-appearance">docs</a> for linking
 
 <h3>Preview</h3>
-![](demo.gif)
+![rn-dark-mode](demo.gif)
 
 
