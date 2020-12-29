@@ -41,6 +41,7 @@ Please refer the <a href="https://github.com/expo/react-native-appearance">docs<
 
 <h3>Example</h3>
 ```sh
+
 // App.js
 
 import React from 'react';
