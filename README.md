@@ -26,7 +26,7 @@ For rn-dark-mode library to work you need to install react-native-appearance dep
 
 Using npm:
 ```sh
-npm install --save react-native-appearance
+npm install react-native-appearance
 ```
 
 or using yarn:
@@ -38,5 +38,61 @@ Please refer the <a href="https://github.com/expo/react-native-appearance">docs<
 
 <h3>Preview</h3>
 ![rn-dark-mode](demo.gif)
+
+<h3>Example</h3>
+```sh
+// App.js
+
+import React from 'react';
+import ThemeProvider from './theme';
+import Home from './Home';
+
+const App = () => {
+  return (
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
+  );
+};
+
+export default App;
+
+// Home.js
+
+import React from 'react';
+import {useTheme} from './theme';
+import {View, Text, Switch} from 'react-native';
+
+const Home = () => {
+  const {mode, setMode, colors} = useTheme();
+
+  const styles = {
+    containerStyle: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: colors.background,
+    },
+    textStyle: {
+      color: colors.text,
+      padding: 10,
+    },
+  };
+
+  return (
+    <View style={styles.containerStyle}>
+      <Text style={styles.textStyle}>
+        {mode === 'dark' ? 'Dark mode' : 'Light mode'}
+      </Text>
+      <Switch
+        value={mode === 'dark'}
+        onValueChange={(value) => setMode(value ? 'dark' : 'light')}
+      />
+    </View>
+  );
+};
+```
+
+
 
 
