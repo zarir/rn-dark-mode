@@ -49,7 +49,7 @@ Check intallation instructions for expo and bare react native projects at <a tar
 import ThemeProvider from './theme';
 ```
 
-2. Wrap your root level component with ```sh <ThemeProvider>``` component
+2. Wrap your root level component with <ThemeProvider> component
 
 ```sh
 <ThemeProvider>
