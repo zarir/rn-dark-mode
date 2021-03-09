@@ -1,6 +1,5 @@
 import React, {createContext, useState, useEffect} from 'react';
-import {StatusBar} from 'react-native';
-import {Appearance, AppearanceProvider} from 'react-native-appearance';
+import {StatusBar, Appearance} from 'react-native';
 import {light, dark} from './themes';
 
 const defaultMode = Appearance.getColorScheme() || 'light';
@@ -19,10 +18,10 @@ const ThemeProvider = ({children}) => {
     setThemeState(mode);
   };
   useEffect(() => {
-    const subscription = Appearance.addChangeListener(({colorScheme}) => {
+    const appearanceListener = Appearance.addChangeListener(({colorScheme}) => {
       setThemeState(colorScheme);
     });
-    return () => subscription.remove();
+    return () => appearanceListener.remove();
   }, []);
 
   const defaultTheme = {
@@ -32,14 +31,12 @@ const ThemeProvider = ({children}) => {
   };
 
   return (
-    <AppearanceProvider>
-      <ThemeContext.Provider value={defaultTheme}>
-        <StatusBar
-          barStyle={themeState === 'dark' ? 'light-content' : 'dark-content'}
-        />
-        {children}
-      </ThemeContext.Provider>
-    </AppearanceProvider>
+    <ThemeContext.Provider value={defaultTheme}>
+      <StatusBar
+        barStyle={themeState === 'dark' ? 'light-content' : 'dark-content'}
+      />
+      {children}
+    </ThemeContext.Provider>
   );
 };
 
