@@ -20,7 +20,7 @@
 <!-- ABOUT THE PROJECT -->
 <h3> About The Project</h3>
 
-Allows application to detect dark mode on users device using react-native-appearance. Also lets the user to override the system settings for dark mode.
+Allows application to detect dark mode on users device using Appearance module from react-native. Also lets the user to override the system settings for dark mode.
 
 <h3>Preview</h3>
 <img src="https://github.com/zarir/rn-dark-mode/blob/master/demo.gif" alt="Showcase iOS" width="200" height="433">
