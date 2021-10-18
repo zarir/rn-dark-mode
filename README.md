@@ -22,22 +22,6 @@
 
 Allows application to detect dark mode on users device using react-native-appearance. Also lets the user to override the system settings for dark mode.
 
-<h3>Installation</h3>
-
-This library requires react-native-appearance dependency in your project
-
-Using npm:
-```sh
-npm install react-native-appearance
-```
-
-or using yarn:
-```sh
-yarn add react-native-appearance
-```
-
-Check intallation instructions for expo and bare react native projects at <a target="_blank" href="https://github.com/expo/react-native-appearance">https://github.com/expo/react-native-appearance</a>
-
 <h3>Preview</h3>
 <img src="https://github.com/zarir/rn-dark-mode/blob/master/demo.gif" alt="Showcase iOS" width="200" height="433">
 
